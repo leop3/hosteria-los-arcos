@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'SVN';
+    src: url('SVN-Very Berry.ttf');
+}
+
+@font-face {
+    font-family: 'Theseasons';
+    src: url('Theseasons-reg.otf');
+}
+
+
+body {
+    background-color: rgb(8, 218, 183);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo h2 {
+    margin-top: 2%;
+    color: rgb(145, 96, 6);
+    font-family: 'Theseasons';
+    font-size: 1.7rem;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 1;
+    margin: 3%;
+}
+
+section a {
+    width: 10%;
+    height: 5%;
+    border-radius: 10%;
+    margin: 2%;
+}
+
+section a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    margin: 1% 1%;
+}
+
+section a img:hover {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    margin: 1% 1%;
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+@media(max-width: 952px) {
+    .logo {
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    section a {
+        width: 15%;
+        height: 8%;
+        border-radius: 10%;
+        margin: 1% 1%;
+    }
+
+    .logo h2 {
+        color: rgb(145, 96, 6);
+        font-family: 'Theseasons';
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
